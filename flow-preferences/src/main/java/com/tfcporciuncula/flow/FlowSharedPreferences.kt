@@ -37,7 +37,7 @@ class FlowSharedPreferences @JvmOverloads constructor(
     BooleanPreference(keyFlow, sharedPreferences, key, defaultValue, coroutineContext)
 
   @JvmOverloads
-  fun getString(key: String, defaultValue: String = ""): Preference<String> =
+  fun getString(key: String, defaultValue: String? = ""): Preference<String?> =
     StringPreference(keyFlow, sharedPreferences, key, defaultValue, coroutineContext)
 
   @JvmOverloads
